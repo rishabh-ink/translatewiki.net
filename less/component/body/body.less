@@ -7,7 +7,28 @@
 	.drop-shadow();
 }
 
-section.home-section {
-	margin: 100px auto;
+section.info-banner {
+	@baseMargin: @gridGutterWidth / 4;
+
+	.info-box {
+		background: #85BEFF;
+		margin: @baseMargin;
+		height: @gridColumnWidth * 2.5;
+		padding: (@baseMargin * 8) @baseMargin;
+
+		&:first-child {
+			margin-left: @baseMargin;
+		}
+
+		.title {
+			margin: @baseMargin;
+			display: block;
+			font-size: @baseFontSize * 1.2;
+		}
+
+		.value {
+			font-size: @baseFontSize * 2;
+		}
+	}
 }
 
