@@ -1,0 +1,587 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Translatewiki.net – free &amp; open-source software translation wiki</title>
+	<meta name="description" content="Translatewiki.net is a localisation platform for translation communities, language communities, and free and open source projects.">
+	<meta name="author" content="Wikimedia Foundation">
+
+	<meta name="viewport" content="width=device-width">
+
+  <!-- Using a less build system on the server side. -->
+	<!--
+  <link rel="stylesheet/less" href="less/style.less">
+	<script src="js/libs/less-1.3.0.min.js"></script>
+  -->
+	<link rel="stylesheet" href="less/style.css">
+
+	<script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+    <div class="brand-titlebar navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#"><img src="img/branding/logo-h50-text.png" alt="MetricStream brand"></a>
+
+          <div class="brand-header-button nav-collapse pull-right">
+            <ul class="nav">
+              <li class="dropdown">
+                <div class="btn-group">
+                  <a href="#" role="button" class="btn dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret inverse"></b></a>
+                  <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="drop3">
+                    <li>
+                      <form class="form-vertical dropdown-form">
+                        <div class="control-group">
+                          <label class="control-label" for="inputUsername"><i class="icon-user"></i> Username</label>
+                          <div class="controls">
+                            <input type="text" id="inputUsername" placeholder="Type your username" />
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <label class="control-label" for="inputPassword"><i class="icon-key"></i> Password</label>
+                          <div class="controls">
+                            <input type="password" id="inputPassword" placeholder="Type your password" />
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <div class="controls">
+                            <label class="checkbox"  data-bootstrap-tooltip="left" title="Do not use on public computers.">
+                              <input type="checkbox" /> Remember me
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="row-fluid">
+                          <div class="span4">
+                            <div class="control-group">
+                              <div class="controls">
+                                <button type="clear" class="btn btn-block">Clear</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="span8">
+                            <div class="control-group">
+                              <div class="controls">
+                                <button type="submit" class="btn btn-block btn-primary">Sign in</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="divider"></li>
+                    <li data-bootstrap-tooltip="left" title="Signing up is fast and easy!"><a tabindex="-1" href="#"><i class="icon-asterisk"></i> New user? Sign up!</a></li>
+                    <li class="divider"></li>
+                    <li data-bootstrap-tooltip="left" title="Forgot your username/password? Having other sign in issues? We're here to help!"><a tabindex="-1" href="#"><i class="icon-question-sign"></i> Trouble signing in?</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+
+          <div class="brand-header-nav nav-collapse pull-right">
+            <ul class="nav">
+              <li><a href="#"><i class="icon-home"></i> Home</a></li>
+              <li><a href="#"><i class="icon-money"></i> Pricing</a></li>
+              <li><a href="#"><i class="icon-shopping-cart"></i> Applications</a></li>
+              <li><a href="#"><i class="icon-cogs"></i> Solutions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main container">
+
+      <div class="row-fluid">
+        <div class="span6"></div>
+        <div class="span6">
+          <form class="pull-right form-search">
+            <div class="control-group">
+              <div class="controls">
+                <div class="input-append">
+                  <input class="search-query" type="text" placeholder="Search..." data-provide="typeahead" data-items="4" data-source="[&quot;grc&quot;,&quot;it&quot;,&quot;software&quot;,&quot;support&quot;,&quot;risk&quot;,&quot;mitigation&quot;,&quot;plan&quot;,&quot;legal&quot;,&quot;law&quot;,&quot;IT GRC&quot;,&quot;Risk Management&quot;,&quot;Legal GRC&quot;,&quot;Policy Management&quot;,&quot;policy&quot;,&quot;data&quot;,&quot;collection&quot;]" />
+                <button type="submit" class="btn"><i class="icon-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="brand-branding-carousel" class="brand-branding-carousel carousel slide">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="active item">
+            <div class="featured feature-open hero-unit">
+              <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span3">
+                  <img src="img/features/internet-earth.png" alt="" />
+                </div>
+                <div class="span7">
+                  <h1>Open &amp; flexible</h1>
+                  <h2>Put your GRC applications on the cloud with ease</h2>
+                </div>
+                <div class="span1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="featured feature-powerful hero-unit">
+              <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span3">
+                  <img src="img/features/lock.png" alt="" />
+                </div>
+                <div class="span7">
+                  <h1>Powerful, secure &amp; scalable</h1>
+                  <h2>Run your GRC applications on the MetricStream's Enterprise Platform</h2>
+                </div>
+                <div class="span1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="featured feature-excite hero-unit">
+              <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span3">
+                  <img src="img/features/internet-earth.png" alt="" />
+                </div>
+                <div class="span7">
+                  <h1>Join the excitement</h1>
+                  <h2>Try brand today and let your GRC applications become a reality</h2>
+                </div>
+                <div class="span1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#brand-branding-carousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#brand-branding-carousel" data-slide="next">&rsaquo;</a>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span4"></div>
+        <div class="span4">
+          <a href="#" class="btn btn-large btn-block btn-success" data-bootstrap-tooltip="top" title="Start using brand today and empower your busines!"><i class="icon-arrow-right"></i> Sign up &amp; get started!</a>
+        </div>
+        <div class="span4"></div>
+      </div>
+
+      <hr />
+
+      <section class="home-section">
+        <div class="row-fluid">
+          <div class="span6">
+            <h3>What is brand?</h3>
+            <p>brand leverages the MetricStream GRC Platform-as-a-Service to quickly build, deploy and manage a variety of GRC applications.</p>
+            <a href="#" class="btn btn-mini btn-info">Learn more</a>
+          </div>
+
+          <div class="span6">
+            <h3>How brand can help your business?</h3>
+            <p>brand delivers the complete technology stack needed for GRC application development, deployment and delivery - from database &amp; code libraries to workflow &amp; user interface to reporting &amp; analytics.</p>
+            <a href="#" class="btn btn-mini btn-info">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="home-section application-gallery">
+        <h2><i class="icon-picture"></i> Application Gallery</h2>
+        <div class="gallery staff-picks">
+          <div class="row-fluid">
+            <div class="span9">
+              <h3><i class="icon-asterisk"></i> Staff picks</h3>
+            </div>
+            <div class="span3 view-all">
+              <a href="#" data-bootstrap-tooltip="top" title="View all applications picked by the brand staff" class="pull-right btn btn-mini btn-info">View all <i class="icon-circle-arrow-right"></i></a>
+            </div>
+          </div>
+          <ul class="thumbnails">
+            <li class="span4">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box.png" alt=""></a>
+                <h4><a href="#">IT GRC</a></h4>
+                <p class="developer"><a href="">ACME ITGRC Pvt. Ltd.</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> it</span></a>
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> software</span></a>
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> support</span></a>
+                </div>
+                <p>Adopt best practices to improve accountability and communication</p>
+                <div class="btn-group">
+                  <button class="btn"><i class="icon-info-sign"></i> Info</button>
+                  <button class="btn"><i class="icon-eye-open"></i> Preview</button>
+                  <button class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</button>
+                </div>
+              </div>
+            </li>
+            <li class="span4">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box.png" alt=""></a>
+                <h4><a href="#">Risk Management</a></h4>
+                <p class="developer"><a href="">ACME RiskMgmt</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> risk</span></a>
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> mitigation</span></a>
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> plan</span></a>
+                </div>
+                <p>Manage risk to seize growth opportunities and generate returns</p>
+                <div class="btn-group">
+                  <button class="btn"><i class="icon-info-sign"></i> Info</button>
+                  <button class="btn"><i class="icon-eye-open"></i> Preview</button>
+                  <button class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</button>
+                </div>
+              </div>
+            </li>
+            <li class="span4">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box.png" alt=""></a>
+                <h4><a href="#">Legal GRC</a></h4>
+                <p class="developer"><a href="">ACME Legal Inc.</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-half"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> legal</span></a>
+                  <a href="#"><span class="label label-info"><i class="icon-tag"></i> law</span></a>
+                </div>
+                <p>Manage, measure, and drive continues improvement</p>
+                <div class="btn-group">
+                  <button class="btn"><i class="icon-info-sign"></i> Info</button>
+                  <button class="btn"><i class="icon-eye-open"></i> Preview</button>
+                  <button class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="gallery popular">
+          <div class="row-fluid">
+            <div class="span9">
+              <h3><i class="icon-trophy"></i> Most popular</h3>
+            </div>
+            <div class="span3 view-all">
+              <a href="#" data-bootstrap-tooltip="top" title="View all most popular applications" class="pull-right btn btn-mini btn-info">View all <i class="icon-circle-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <ul class="thumbnails">
+            <li class="span3">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box-64.png" alt=""></a>
+                <h4><a href="#">Policy Management</a></h4>
+                <p class="developer"><a href="">ACME PolMan</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> policy</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> data</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> collection</span></a>
+                </div>
+                <p>Streamline data collection and process it into information, knowledge and actionable decisions</p>
+                <div class="btn-group">
+                  <a href="#" title="More information" data-bootstrap-tooltip="top" class="btn"><i class="icon-info-sign"></i></a>
+                  <a href="#" title="Preview" data-bootstrap-tooltip="top" class="btn"><i class="icon-eye-open"></i></a>
+                  <a href="#" title="Buy now!" data-bootstrap-tooltip="top" class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box-64.png" alt=""></a>
+                <h4><a href="#">Policy Management</a></h4>
+                <p class="developer"><a href="">ACME PolMan</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> policy</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> data</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> collection</span></a>
+                </div>
+                <p>Streamline data collection and process it into information, knowledge and actionable decisions</p>
+                <div class="btn-group">
+                  <a href="#" title="More information" data-bootstrap-tooltip="top" class="btn"><i class="icon-info-sign"></i></a>
+                  <a href="#" title="Preview" data-bootstrap-tooltip="top" class="btn"><i class="icon-eye-open"></i></a>
+                  <a href="#" title="Buy now!" data-bootstrap-tooltip="top" class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box-64.png" alt=""></a>
+                <h4><a href="#">Policy Management</a></h4>
+                <p class="developer"><a href="">ACME PolMan</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> policy</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> data</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> collection</span></a>
+                </div>
+                <p>Streamline data collection and process it into information, knowledge and actionable decisions</p>
+                <div class="btn-group">
+                  <a href="#" title="More information" data-bootstrap-tooltip="top" class="btn"><i class="icon-info-sign"></i></a>
+                  <a href="#" title="Preview" data-bootstrap-tooltip="top" class="btn"><i class="icon-eye-open"></i></a>
+                  <a href="#" title="Buy now!" data-bootstrap-tooltip="top" class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box-64.png" alt=""></a>
+                <h4><a href="#">Policy Management</a></h4>
+                <p class="developer"><a href="">ACME PolMan</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> policy</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> data</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> collection</span></a>
+                </div>
+                <p>Streamline data collection and process it into information, knowledge and actionable decisions</p>
+                <div class="btn-group">
+                  <a href="#" title="More information" data-bootstrap-tooltip="top" class="btn"><i class="icon-info-sign"></i></a>
+                  <a href="#" title="Preview" data-bootstrap-tooltip="top" class="btn"><i class="icon-eye-open"></i></a>
+                  <a href="#" title="Buy now!" data-bootstrap-tooltip="top" class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box-64.png" alt=""></a>
+                <h4><a href="#">Policy Management</a></h4>
+                <p class="developer"><a href="">ACME PolMan</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> policy</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> data</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> collection</span></a>
+                </div>
+                <p>Streamline data collection and process it into information, knowledge and actionable decisions</p>
+                <div class="btn-group">
+                  <a href="#" title="More information" data-bootstrap-tooltip="top" class="btn"><i class="icon-info-sign"></i></a>
+                  <a href="#" title="Preview" data-bootstrap-tooltip="top" class="btn"><i class="icon-eye-open"></i></a>
+                  <a href="#" title="Buy now!" data-bootstrap-tooltip="top" class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box-64.png" alt=""></a>
+                <h4><a href="#">Policy Management</a></h4>
+                <p class="developer"><a href="">ACME PolMan</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> policy</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> data</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> collection</span></a>
+                </div>
+                <p>Streamline data collection and process it into information, knowledge and actionable decisions</p>
+                <div class="btn-group">
+                  <a href="#" title="More information" data-bootstrap-tooltip="top" class="btn"><i class="icon-info-sign"></i></a>
+                  <a href="#" title="Preview" data-bootstrap-tooltip="top" class="btn"><i class="icon-eye-open"></i></a>
+                  <a href="#" title="Buy now!" data-bootstrap-tooltip="top" class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box-64.png" alt=""></a>
+                <h4><a href="#">Policy Management</a></h4>
+                <p class="developer"><a href="">ACME PolMan</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> policy</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> data</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> collection</span></a>
+                </div>
+                <p>Streamline data collection and process it into information, knowledge and actionable decisions</p>
+                <div class="btn-group">
+                  <a href="#" title="More information" data-bootstrap-tooltip="top" class="btn"><i class="icon-info-sign"></i></a>
+                  <a href="#" title="Preview" data-bootstrap-tooltip="top" class="btn"><i class="icon-eye-open"></i></a>
+                  <a href="#" title="Buy now!" data-bootstrap-tooltip="top" class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+            </li>
+            <li class="span3">
+              <div class="well gallery-item">
+                <a href="#" class="thumbnail"><img src="img/gallery/box-64.png" alt=""></a>
+                <h4><a href="#">Policy Management</a></h4>
+                <p class="developer"><a href="">ACME PolMan</a></p>
+                <span class="rating">
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star"></i>
+                  <i class="icon-star-empty"></i>
+                </span>
+                <div class="tags">
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> grc</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> policy</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> data</span></a>
+                  <a href="#"><span class="label label-success"><i class="icon-tag"></i> collection</span></a>
+                </div>
+                <p>Streamline data collection and process it into information, knowledge and actionable decisions</p>
+                <div class="btn-group">
+                  <a href="#" title="More information" data-bootstrap-tooltip="top" class="btn"><i class="icon-info-sign"></i></a>
+                  <a href="#" title="Preview" data-bootstrap-tooltip="top" class="btn"><i class="icon-eye-open"></i></a>
+                  <a href="#" title="Buy now!" data-bootstrap-tooltip="top" class="btn btn-success"><i class="icon-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="home-section whos-using">
+        <h2><i class="icon-group"></i> Our Clientele</h2>
+        <div class="row-fluid">
+          <div class="span4"><img src="img/branding/brand-gray.png" alt="brand" /></div>
+          <div class="span4"><img src="img/branding/metricstream-gray.png" alt="MetricStream" /></div>
+          <div class="span4"></div>
+        </div>
+      </section>
+
+
+      <section class="home-section testimonials">
+        <h2><i class="icon-certificate"></i> Client Testimonials</h2>
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            <small><strong>ACME Fake client</strong> <cite title="Source Title">John Doe</cite></small>
+          </blockquote>
+
+          <blockquote>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <small><strong>Another ACME Fake</strong> client <cite title="Source Title">Jane Doe</cite></small>
+          </blockquote>
+
+          <blockquote>
+            <p>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <small><strong>ACME Corp.</strong> <cite title="Source Title">ACME Corp. Labs Team</cite></small>
+          </blockquote>
+      </section>
+
+
+
+
+
+
+
+
+      <footer>
+        <div class="row-fluid">
+          <div class="span2"><a href="http://www.metricstream.com"><img src="img/branding/metricstream.jpg" alt="MetricStream Inc." /></a></div>
+          <div class="span10">
+            <p class="pull-right"><small>&copy; 2012, MetricStream Inc. All rights reserved.</small></p>
+          </div>
+        </div>
+      </footer>
+
+    </div> <!-- /container -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!-- scripts concatenated and minified via ant build script-->
+<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+<!-- end scripts-->
+
+<!-- Not using GA -->
+<!--
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+-->
+
+</body>
+</html>

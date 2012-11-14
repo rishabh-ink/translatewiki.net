@@ -1,0 +1,17 @@
+@media (min-width: 980px) {
+    body {
+        margin-top: (@navbarHeight * 1.6);
+        margin-bottom: (@navbarHeight / 2);
+    }
+}
+// Navbar
+@navbarHeight:                    60px;
+@navbarBackgroundHighlight:       @grayLighter;
+@navbarBackground:                @white;
+
+// Navbar caret
+.navbar .nav li.dropdown .dropdown-toggle .caret.inverse,
+.navbar .nav li.dropdown.open .caret.inverse {
+  border-top-color: @black;
+  border-bottom-color: @black;
+}
