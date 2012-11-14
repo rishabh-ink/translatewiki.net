@@ -11,14 +11,13 @@ section.info-banner {
 	@baseMargin: @gridGutterWidth / 4;
 
 	.info-box {
-		background: #85BEFF;
+		.img-gradient("../img/common/bghaze.png", #FFFFFF, 1, #C9E2FF, #ADD4FF, center center, 100px);
+		.drop-shadow();
+		.border-radius();
+
 		margin: @baseMargin;
 		height: @gridColumnWidth * 2.5;
-		padding: (@baseMargin * 8) @baseMargin;
-
-		&:first-child {
-			margin-left: @baseMargin;
-		}
+		padding: (@baseMargin * 8) (@baseMargin * 4);
 
 		.title {
 			margin: @baseMargin;
