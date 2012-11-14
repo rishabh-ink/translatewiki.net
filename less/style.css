@@ -10275,9 +10275,16 @@ ul.horizontal-list li {
   display: inline;
   margin: 0 20px;
 }
+i {
+  color: #777777;
+}
 .main {
   padding: 0px 50px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  background: url("../img/common/gplaypattern.png");
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 section.home-section {
   margin: 100px auto;
@@ -10298,12 +10305,12 @@ section.home-section {
   background-color: transparent\9;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff, endColorstr=#ffffffff)";
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff, endColorstr=#ffffffff);
-  background-image: url("../img/common/bghaze.png"), -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 1500, color-stop(0%, #ffffff), color-stop(100%, #ffcea3));
-  background-image: url("../img/common/bghaze.png"), -webkit-radial-gradient(top center, #ffffff, #ffcea3 1500px);
-  background-image: url("../img/common/bghaze.png"), -moz-radial-gradient(top center, #ffffff, #ffcea3 1500px);
-  background-image: url("../img/common/bghaze.png"), -o-radial-gradient(top center, #ffffff, #ffcea3 1500px);
-  background-image: url("../img/common/bghaze.png"), -ms-radial-gradient(top center, #ffffff, #ffcea3 1500px);
-  background-image: url("../img/common/bghaze.png"), radial-gradient(top center, #ffffff, #ffcea3 1500px);
+  background-image: url("../img/common/bghaze.png"), -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 1500, color-stop(0%, #ffffff), color-stop(100%, #85beff));
+  background-image: url("../img/common/bghaze.png"), -webkit-radial-gradient(top center, #ffffff, #85beff 1500px);
+  background-image: url("../img/common/bghaze.png"), -moz-radial-gradient(top center, #ffffff, #85beff 1500px);
+  background-image: url("../img/common/bghaze.png"), -o-radial-gradient(top center, #ffffff, #85beff 1500px);
+  background-image: url("../img/common/bghaze.png"), -ms-radial-gradient(top center, #ffffff, #85beff 1500px);
+  background-image: url("../img/common/bghaze.png"), radial-gradient(top center, #ffffff, #85beff 1500px);
   background-repeat: repeat;
 }
 .brand-titlebar .brand-header-nav {
