@@ -10278,11 +10278,6 @@ ul.horizontal-list li {
 i {
   color: #777777;
 }
-@media (max-width: 767px) {
-  .row-fluid [class*="span"]:first-child {
-    margin-left: 5px;
-  }
-}
 .main {
   padding: 0px 50px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
@@ -10373,4 +10368,9 @@ footer .sponsor {
 .navbar .nav li.dropdown.open .caret.inverse {
   border-top-color: #000000;
   border-bottom-color: #000000;
+}
+@media (max-width: 767px) {
+  .info-banner.row-fluid [class*="span"]:first-child {
+    margin-left: 5px;
+  }
 }
